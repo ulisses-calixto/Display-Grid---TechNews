@@ -1,0 +1,143 @@
+:root {
+    --verde: #bff009;
+    --branco: #fff;
+    --preto: #000;
+    --cinza_claro: #f2f2f2;
+    --cinza_medio: #868585;
+    --cinza_escuro: #1e1e1e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.grid-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0;
+    gap: 32px;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cinza_claro);
+    white-space: nowrap;
+}
+
+/*Grid cabeçalho*/
+.grid-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*Grid cards*/
+.grid-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 32px;
+}
+
+.cards {
+    width: 368px;
+    padding: 24px;
+    background-color: var(--cinza_claro);
+    border-radius: 8px;
+    text-align: justify;
+}
+
+/*Animação cards*/
+.cards:hover  {
+    color: var(--preto);
+    background-color: var(--preto);
+    transform: scale(1.015);
+    transition: 0.2s;
+}
+
+.cards:hover  a{
+    color: var(--branco);
+}
+
+/*Botão - 'Assine Agora'*/
+.botao {
+    text-align: right;
+    border: 0;
+    background: 0;
+}
+
+.botao a {
+    background-color: var(--verde);
+    padding: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+}
+
+/*Formatação*/
+.spc-between {
+    justify-content: space-between;
+}
+
+.container {
+    width: 1312px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px;
+}
+
+/*Corpo*/
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/*Cabeçalho*/
+header div a {
+    color: var(--preto);
+    text-decoration: none;
+}
+
+main {
+    text-align: center; 
+    width: 1312px;
+    margin: 64px auto;
+}
+
+main div small{
+    background-color: var(--verde);
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--cinza_escuro);
+    border-radius: 4px;
+}
+
+main div h1{
+    font-size: 48px;
+    padding: 8px 0px;
+}
+
+main div p{
+    color: var(--cinza_medio);
+    font-size: 14px;
+    max-width: 354px;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+/*Formatação texto - Cards*/
+main div .cards a{
+    color: var(--preto);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*Rodapé*/
+footer {
+    text-align: center;
+    color: var(--branco);
+    background-color: var(--cinza_escuro);
+    padding: 46px 0px;
+}
